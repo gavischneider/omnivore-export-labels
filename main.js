@@ -7,7 +7,7 @@ const jsonsInDir = fs.readdirSync('.').filter(file => path.extname(file) === '.j
 let files = [];
 let total = 0;
 let links = {};
-let NoLabels = [];
+let noLabels = [];
 let fileName = 'links.json';
 
 // Place all JSON files from current directory in files array
@@ -38,13 +38,14 @@ files.forEach(file => {
             }
         } else {
             // No labels attached
-            NoLabels.push(jsonObject["url"]);
+            noLabels.push(jsonObject["url"]);
         }
     }
 });
 
-// Add NoLabels array to links object
-links["NoLabels"] = NoLabels;
+// Add noLabels array to links object
+links["noLabels"] = noLabels;
+links = [links];
 
 //Save links object to file
 let linksString = JSON.stringify(links);
