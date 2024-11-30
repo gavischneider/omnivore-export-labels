@@ -71,3 +71,4 @@ console.log("\nTotal ammount of links: " + total);
 console.log("\nTotal ammount of links (including duplicates): " + totalWithDuplicates);
 console.log("\nTotal ammount of links with more than one label attached: " + (totalWithDuplicates - total));
 
+
