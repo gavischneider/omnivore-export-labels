@@ -71,9 +71,6 @@ Here’s what the object will look like:
 			"https://www.instapaper.com",
 			"https://goodlinks.app/",
 		],
-		.
-		.
-		.
 		"noLabels": [
 			"https://www.stumbleupon.com/",
 			"https://techcrunch.com/",
